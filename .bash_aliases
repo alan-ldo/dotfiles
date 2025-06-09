@@ -29,7 +29,7 @@ alias ....='cd ../../..'
 vim() {                     # Use Neovim when typing 'vim'
     nvim "$@"
 }
-alias vimreal='/usr/bin/vim'  # Access real Vim if needed
+alias vimp='/usr/bin/vim'  # Access real Vim if needed
 
 alias ra='ranger'           # Terminal file manager
 alias bt='btop'             # System resource monitor

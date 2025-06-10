@@ -22,6 +22,9 @@ shopt -s checkwinsize
 # Improve support for non-text files with less
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# Set blinking block cursor on terminal startup
+echo -ne '\e[1 q'
+
 # ------------------------------------------------------------------------------
 # 🎨 Colors and Appereance
 # ------------------------------------------------------------------------------

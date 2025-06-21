@@ -1,6 +1,3 @@
-# Personal aliases
-alias ra='ranger'
-
 # 🧰 Basic ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -alF'      # Long listing with file types
@@ -12,10 +9,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# 🚨 Alerts for long commands (use: sleep 10; alert)
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" \
-"$(history | tail -n1 | sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # 🌐 Networking shortcuts
 alias ports='netstat -tulanp'
 alias ipinfo='ip -c a'
@@ -26,10 +19,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # 🛠️ CLI Applications
-vim() {                     # Use Neovim when typing 'vim'
-    nvim "$@"
-}
-alias vimp='/usr/bin/vim'  # Access real Vim if needed
+alias vimk='NVIM_APPNAME="nvim-kickstart" nvim' # Acces the neovim with folder nvim-kickstart configuration
+alias vimc='NVIM_APPNAME="NvChad" nvim' # Acces the neovim with folder NvChad configuration
 
 alias ra='ranger'           # Terminal file manager
 alias bt='btop'             # System resource monitor
